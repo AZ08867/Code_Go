@@ -15,9 +15,9 @@ func isCancelled(ch chan struct{}) bool {
 	}
 }
 
-func cancel_1(ch chan struct{}) {
-	ch <- struct{}{}
-}
+// func cancel_1(ch chan struct{}) {
+// 	ch <- struct{}{}
+// }
 
 func cancel_2(ch chan struct{}) {
 	close(ch)
